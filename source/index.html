@@ -5,14 +5,18 @@ layout: default
 <div class="blog-index">
   <div class="container">
     <div class="row">  
-{% for post in site.posts %}
-<div class="blog-index-entry">
-  <span class="blog-index-entry-date">{{ post.date | date:"%x"}}</span>
-  <span class="blog-index-entry-title">
-    <a href="{{ post.url }}" > {{ post.title }} </a>
-  </span>
-{% endfor %}
-
+      
+    <div class="twocol">&nbsp;</div>
+      <div class="eightcol"><ul>
+        {% for post in site.posts %}
+        <li> <span class="blog-index-entry-date">{{ post.date | date:"%x"}}</span>
+            <span class="blog-index-entry-title">
+              <a href="{{ post.url }}" > {{ post.title }} </a>
+            </span>
+            </li>
+        {% endfor %}
+    </ul></div>
+    <div class="twocol">&nbsp;</div>
 
 {% if site.disqus_short_name %}
 <script type="text/javascript">
