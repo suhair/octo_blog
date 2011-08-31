@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Why 12 Columns?"
+date: 2011-08-31 13:54
+comments: true
+categories:"grid"  
+---
+Why 12 columns?
+Twelve divides into even columns of two, three, four or six.
+
+Or into numerous uneven combinations like seven and five or five, four, three.
+
+The last example is as simple as three divs with the classes .fivecol, .fourcol and .threecol
+
+Mobile version
+By mobile, I really mean smart phones. I'm not even attempting to support WAP phones or anything old like that. But it does work on devices that recognise 'handheld' in the style sheet media and/or media queries. With media queries you can even include x2 images for the iPhone 4 Retina Display.
+
+Photoshop Template
+Download a Photoshop template of the grid at 1140px here. It's based on how it's displayed in WebKit, so it's actually 1133px, as all browsers round sub-pixels slightly differently.
+
