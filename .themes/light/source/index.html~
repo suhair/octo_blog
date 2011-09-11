@@ -5,7 +5,11 @@ layout: default
 <div class="blog-index">
   <div class="container">
     <div class="row">  
-      <ul>
+      
+    <div class="twocol">&nbsp;</div>
+    <div class="eightcol">
+        <div id="blog_index">
+        <ul>
         {% for post in site.posts %}
         <li> <span class="blog-index-entry-date">{{ post.date | date:"%x"}}</span>
             <span class="blog-index-entry-title">
@@ -13,7 +17,10 @@ layout: default
             </span>
             </li>
         {% endfor %}
-      </ul>
+        </ul>
+    </div>
+    </div>
+    <div class="twocol">&nbsp;</div>
 
 {% if site.disqus_short_name %}
 <script type="text/javascript">
