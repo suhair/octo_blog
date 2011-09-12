@@ -1,0 +1,68 @@
+---
+layout: post
+title: "Quartz Essentials"
+date: 2011-09-12 16:53
+comments: true
+categories: 
+---
+<div class="container">
+	<div class="row">
+    
+    <div class="sixcol">&nbsp;</div>
+
+		<div class="sixcol last">
+      <h1 class="main-head">Essentials of Quartz.net for C# programmer</h1>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="container padding40">
+	<div class="row">
+    <h2>
+      Quartz Job
+    </h2>
+		<div class="eightcol">
+    
+      
+      Quartz job is a class that performs a task through implementing <code>Quartz.IJob </code>interface.  Its only method, <code>Execute </code>is called by the scheduler passing <code>JobExecutionContext </code>as the parameter. <code>JobExecutionContext </code>provides the job class with runtime environment of the Quartz as well as the job details. <code>JobDetail </code>serves as the definition for a job instance and it should be registered with the scheduler. <code>JobDataMap </code>is used for passing configuration information to the Job.
+
+    </div>
+		<div class="fourcol last"></div>
+	</div>
+</div>
+
+
+<div class="container padding40">
+	<div class="row">
+    <H2>
+      Quartz Trigger
+    </H2>
+		<div class="eightcol">
+      Quartz Job contains the logic for performing the task but does not have information about when it should be executed. This knowledge is left for the trigger. There is three specialized triggers in the Quartz library.
+    </div>
+		<div class="fourcol last right-align"></div>
+	</div>
+</div>
+
+
+<div class="container gray">
+	<div class="row">
+		<div class="fourcol"><h3>SimpleTrigger</h3>
+      <p class="para">Useful for jobs that need to be started at a particular date / time and to repeat n number of times with a possible delay in between.</p>
+    </div>
+		<div class="fourcol"><h3>CronTrigger</h3>
+      <p class="para">Used for fine tuning the triggering time through unix cron like expressions.</p>
+    </div>
+		<div class="fourcol last"><h3>NthIncludedDayTrigger</h3>
+      <p class="para">Designed to run a job on the nth day of the given interval type. This is the latest addition to the Quartz library.</p>
+    </div>
+	</div>
+</div>
+
+
+
+
+
