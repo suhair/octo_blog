@@ -48,7 +48,7 @@ categories:
 </div>
 
 
-<div class="container gray">
+<div class="container gray padding40">
 	<div class="row">
 		<div class="fourcol"><h3>SimpleTrigger</h3>
       <p class="para">Useful for jobs that need to be started at a particular date / time and to repeat n number of times with a possible delay in between.</p>
@@ -58,7 +58,7 @@ categories:
     </div>
 		<div class="fourcol last"><h3>NthIncludedDayTrigger</h3>
       <p class="para">Designed to run a job on the nth day of the given interval type. This is the latest addition to the Quartz library.</p>
-    </div>
+    </div> 
 	</div>
 </div>
 

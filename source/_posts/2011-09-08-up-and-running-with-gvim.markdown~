@@ -244,7 +244,7 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
 </pre>
 
                 <p class="para">
-                Restart Vim and we can explore NERDTree. Enter <code>:NERDTree</code> in command line mode and NERDTree opens as a split. Arrow keys or Vim navigational keys <code>hjkl</code> could be used for moving around the hierarchy. <code>o</code> canbe used for expanding the folder or opening the file as new split depending on whether the cursor is on folder or a file. Open a file in a tab by moving the cursor to that file name and pressing the key <code>t</code>. Another useful key is <code>p</code> for navigating to the root folder, when the cursor is on child folder. You can use <code>go</code> for previewing the selected file instead of opening it for editing.
+                Restart Vim and we can explore NERDTree. Enter <code>:NERDTree</code> in command line mode and NERDTree opens as a split. Arrow keys or Vim navigational keys <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> could be used for moving around the hierarchy. <kbd>o</kbd> can be used for expanding the folder or opening the file as new split depending on whether the cursor is on folder or a file. Open a file in a tab by moving the cursor to that file name and pressing the key <kbd>t</kbd>. Another useful key is <code>p</code> for navigating to the root folder, when the cursor is on child folder. You can use <code>go</code> for previewing the selected file instead of opening it for editing.
                 </p>
     		</div>
         
@@ -267,6 +267,7 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
                 <p class="para">This plugin provides mappings to easily delete, change and add such surroundings in pairs. Install the plugin in the bundle folder using the following command</p>
                 <code>git clone git://github.com/tpope/vim-surround.git</code>
 
+                <p>In visual mode (charcter or line wise) make a selection around the text that should be surrounded, press <kbd>S</kbd> and then enter the the tag or character to use for surrounding followed by pressing the <kbd>ENTER</kbd> key.</p>
                 <table class="zebra-striped">
                 	<thead>
                 		<tr>
@@ -287,8 +288,8 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
                     		<td>Replaces the target surrounding with the given replacement. <code>t</code> will act as placeholder for the tag</td>
                     	</tr>
                     	<tr>
-                    		<td></td>
-                    		<td></td>
+                    		<td>ys</td>
+                    		<td>Takes a valid vim motion and wraps it using the second argument</td>
                     	</tr>
                     	<tr>
                     		<td></td>
@@ -308,6 +309,13 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
     </div>
 
 
+    <div class="container padding40">
+    	<div class="row">
+    		<h2>Folding</h2>
+            <div class="eightcol"><p class="para">Vim can fold blocks of code. Select the lines to be folded in vim (for example, using the linewise visual mode) and then press <kbd>z</kbd><kbd>f</kbd> keys to make it folded. You can open the fold using <kbd>z</kbd><kbd>o</kbd> and to close it back press <kbd>z</kbd><kbd>c</kbd></p></div>
+            <div class="fourcol right-align last"></div>
+    	</div>
+    </div>
     
 
 
@@ -446,7 +454,7 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
                         </tr>
                         <tr>
                         	<td>CTRL-k [digraph code]</td>
-                        	<td>For inserting the characters not in the keyboard. For example CTRL-kCt inserts a cent(¢) character</td>
+                        	<td>For inserting the characters not in the keyboard. For example CTRL-kCt inserts a cent(&cent;) character</td>
                         </tr>
                     </tbody>
                 </table>
