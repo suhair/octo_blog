@@ -244,4 +244,18 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 }
 
 
+kbd{
+    padding: 2px 4px;
+    white-space: nowrap;
+    color: black;
+    background: #EEE;
+    border-width: 1px 3px 3px 1px;
+    border-style: solid;
+    border-color: #CCC #AAA #888 #BBB;
+    font-size: 14px;
+    font-family: monospace, sans-serif
+}
+
+
+
 

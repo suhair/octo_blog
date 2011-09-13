@@ -37,9 +37,9 @@ categories:
 
 <div class="container padding40">
 	<div class="row">
-    <code>
+    <H2>
       Quartz Trigger
-    </code>
+    </H2>
 		<div class="eightcol">
       Quartz Job contains the logic for performing the task but does not have information about when it should be executed. This knowledge is left for the trigger. There is three specialized triggers in the Quartz library.
     </div>
@@ -48,7 +48,7 @@ categories:
 </div>
 
 
-<div class="container gray">
+<div class="container gray padding40">
 	<div class="row">
 		<div class="fourcol"><h3>SimpleTrigger</h3>
       <p class="para">Useful for jobs that need to be started at a particular date / time and to repeat n number of times with a possible delay in between.</p>
@@ -56,7 +56,7 @@ categories:
 		<div class="fourcol"><h3>CronTrigger</h3>
       <p class="para">Used for fine tuning the triggering time through unix cron like expressions.</p>
     </div>
-		<div class="fourcol"><h3>NthIncludedDayTrigger</h3>
+		<div class="fourcol last"><h3>NthIncludedDayTrigger</h3>
       <p class="para">Designed to run a job on the nth day of the given interval type. This is the latest addition to the Quartz library.</p>
     </div>
 	</div>
