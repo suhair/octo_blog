@@ -244,7 +244,7 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
 </pre>
 
                 <p class="para">
-                Restart Vim and we can explore NERDTree. Enter <code>:NERDTree</code> in command line mode and NERDTree opens as a split. Arrow keys or Vim navigational keys <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> could be used for moving around the hierarchy. <kbd>o</kbd> can be used for expanding the folder or opening the file as new split depending on whether the cursor is on folder or a file. Open a file in a tab by moving the cursor to that file name and pressing the key <kbd>t</kbd>. Another useful key is <code>p</code> for navigating to the root folder, when the cursor is on child folder. You can use <code>go</code> for previewing the selected file instead of opening it for editing.
+                Restart Vim and we can explore NERDTree. Enter <code>:NERDTree</code> in command line mode and NERDTree opens as a split. Arrow keys or Vim navigational keys <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> could be used for moving around the hierarchy. <kbd>o</kbd> can be used for expanding the folder or opening the file as new split depending on whether the cursor is on folder or a file. Open a file in a tab by moving the cursor to that file name and pressing the key <kbd>t</kbd>. Another useful key is <kbd>p</kbd> for navigating to the root folder, when the cursor is on child folder. You can use <kbd>go</kbd> for previewing the selected file instead of opening it for editing.
                 </p>
     		</div>
         
@@ -312,7 +312,7 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
     <div class="container padding40">
     	<div class="row">
     		<h2>Folding</h2>
-            <div class="eightcol"><p class="para">Vim can fold blocks of code. Select the lines to be folded in vim (for example, using the linewise visual mode) and then press <kbd>z</kbd><kbd>f</kbd> keys to make it folded. You can open the fold using <kbd>z</kbd><kbd>o</kbd> and to close it back press <kbd>z</kbd><kbd>c</kbd></p></div>
+            <div class="eightcol"><p class="para">Vim can fold blocks of code. Select the lines to be folded in vim (for example, using the line wise visual mode) and then press <kbd>z</kbd><kbd>f</kbd> keys to make it folded. You can open the fold using <kbd>z</kbd><kbd>o</kbd> and to close it back press <kbd>z</kbd><kbd>c</kbd></p></div>
             <div class="fourcol right-align last"></div>
     	</div>
     </div>
@@ -323,8 +323,39 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
       <h2>Tips & Tricks</h2>
   		<div class="eightcol">
         <p class="para">
-          <kbd>c</kbd><kbd>i</kbd>group of commands could be useful for changing the inner contents. For example to change the content inside a heading in html like <code><h1>change me</h1>, place the cursor anywhere over "change me" and then press cit and type your new heading. <kbd>c</kbd><kbd>i</kbd><kbd>w</kbd>, <kbd>c</kbd><kbd>i</kbd><kbd>'</kbd>, and <kbd>c</kbd><kbd>i</kbd><kbd>t</kbd> changes the inner content of a word, quoted phrase, and tags respectively.
-</code>        </p>
+          <kbd>c</kbd><kbd>i</kbd>group of commands could be useful for changing the inner contents. For example to change the content inside a heading in html like <code>&lt;h1&gt;change me&lt;/h1&gt;</code>, place the cursor anywhere over "change me" and then press cit and type your new heading. <kbd>c</kbd><kbd>i</kbd><kbd>w</kbd>, <kbd>c</kbd><kbd>i</kbd><kbd>'</kbd>, and <kbd>c</kbd><kbd>i</kbd><kbd>t</kbd> changes the inner content of a word, quoted phrase, and tags respectively. 
+        </p>
+
+        <p class="para">
+        Enable and disable spell checking by issuing the commands <code>:set spell </code>and <code>:set nospell </code> respectively. <kbd>z</kbd><kbd>=</kbd> can be used to list (and use) the spelling suggestions when the cursor is above a wrong word.
+        </p>
+
+
+
+        <p class="para">
+          When the cusror is over a word you may search for that word above or below that one using the commands <kbd>*</kbd> and <kbd>#</kbd>.
+        </p>
+
+
+        <p class="para">
+          <code>:r</code> is used to read the contents (like from file or command line) in to the buffer / file. If it is provided with a file name it inserts the contents of that file into the file. The following snippet inserts the date into the file.
+        </p>
+
+<pre>
+:r !date /t
+</pre>
+
+
+
+        <p class="para">
+          <kbd>CTRL</kbd>+<kbd>o</kbd> and <kbd>CTRL</kbd>+<kbd>i</kbd> moves you from and to where the cursor has been.
+        </p>
+
+        <p class="para">
+          Use :bd to close the buffer / file without quiting vim itself
+        </p>
+
+
       </div>
   	</div>
   </div>
