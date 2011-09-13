@@ -1,0 +1,130 @@
+---
+layout: post
+title: "Quick Peek on Django"
+date: 2011-09-13 22:01
+comments: true
+categories: 
+---
+<div class="container">
+	<div class="row">
+        <div class="sixcol">&nbsp;</div>
+        <div class="sixcol last">
+            <h1 class="main-head">A quick peek at Django web framework</h1>
+        </div>
+	</div>
+</div>
+
+
+<div class="container padding40">
+	<div class="row">
+		<h2>Creating a Project</h2>
+		<div class="eightcol">
+<pre>
+django-admin.py startproject <project_name>
+</pre>
+
+            This command will create a django project with the following directory structure.
+
+<pre>
+Volume in drive E has no label.
+Volume Serial Number is 2A62-08F4
+
+Directory of E:\suhair\django_projects\django_bookmarks
+
+09/13/2011  10:09 PM    <DIR>          .
+09/13/2011  10:09 PM    <DIR>          ..
+09/13/2011  10:09 PM               517 manage.py
+09/13/2011  10:09 PM             5,196 settings.py
+09/13/2011  10:09 PM               612 urls.py
+09/13/2011  10:09 PM                 0 __init__.py
+               4 File(s)          6,325 bytes
+               2 Dir(s)  137,906,663,424 bytes free
+</pre>
+        </div>
+		<div class="fourcol right-align last">
+            <p>
+                Create the database and initial tables using <code>manage.py syncdb</code> command
+            </p>
+
+            <p>
+                Run the development server using <code>manage.py runserver</code>
+            </p>
+        </div>
+	</div>
+</div>
+
+
+<div class="container gray padding40">
+	<div class="row">
+        
+		<div class="threecol">
+            <h3>__init__.py</h3>
+            <p class="para">
+                Because of this file the django project folder is treated as a python package. Package is a collection of modules and it prevents naming conflicts.
+            </p>
+        </div>
+		<div class="threecol">
+            <h3>manage.py</h3>
+            <p class="para">Project's version of django-admin.py.</p>    
+        </div>
+		<div class="threecol"><h3>settings.py</h3>
+            <p class="para">
+                Configuration file for the project.
+            </p>
+        </div>
+		<div class="threecol last">
+            <h3>urls.py</h3>
+            <p class="para">
+                This file maps the URLs to python functions.
+            </p>    
+        </div>
+	</div>
+</div>
+
+
+<div class="container padding40">
+	<div class="row">
+		<h2>Creating an application</h2>
+		<div class="eightcol">
+            <p class="para">
+                Django application is a container for views and models. Once the application is created it will have four files named __init__.py, views.py, models.py, and tests.py. Create the simplest view by using the following code inside the views.py file.
+            </p>
+
+
+<pre>
+
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello World! from django")
+
+</pre> 
+<p class="para">
+    In order to connect the url to the view method add the following in urls.py in the root folder. When a request comes Django do the following steps.
+    <ol>
+    	<li>It loads the urls.py module because of ROOT_URLCONF setting</li>
+    	<li>Finds the <code>urlpatterns</code> variable</li>
+    	<li>Traverses the regular expressions in the above variable in order</li>
+    	<li>When the regular expression matches, it loads the corresponding view function</li>
+    	<li>Finally calls the function passing in the parsed arguments</li>
+    </ol>
+</p>
+<pre>
+urlpatterns = patterns('',   
+     url(r'^$', '<path to view function>', name='home')  
+)
+</pre>
+
+        </div>
+		<div class="fourcol last right-align">
+            Create application using <code>manage.py startapp <app_name></code> command.
+            <p>
+                Each view should either return an HttpResponse or should throw an exception such as Http404
+            </p>
+        </div>
+	</div>
+</div>
+
+
+
+
