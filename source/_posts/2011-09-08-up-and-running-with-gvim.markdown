@@ -310,7 +310,16 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
 
     
 
-
+  <div class="container padding40">
+  	<div class="row">
+      <h2>Tips & Tricks</h2>
+  		<div class="eightcol">
+        <p class="para">
+          <kbd>c</kbd><kbd>i</kbd>group of commands could be useful for changing the inner contents. For example to change the content inside a heading in html like <code><h1>change me</h1></code>, place the cursor anywhere over "change me" and then press cit and type your new heading. <kbd>c</kbd><kbd>i</kbd><kbd>w</kbd>, <kbd>c</kbd><kbd>i</kbd><kbd>'</kbd>, and <kbd>c</kbd><kbd>i</kbd><kbd>t</kbd> changes the inner content of a word, quoted phrase, and tags respectively.
+</code>        </p>
+      </div>
+  	</div>
+  </div>
 
 
 
