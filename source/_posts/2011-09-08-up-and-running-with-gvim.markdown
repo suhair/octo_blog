@@ -312,7 +312,12 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
     <div class="container padding40">
     	<div class="row">
     		<h2>Folding</h2>
-            <div class="eightcol"><p class="para">Vim can fold blocks of code. Select the lines to be folded in vim (for example, using the line wise visual mode) and then press <kbd>z</kbd><kbd>f</kbd> keys to make it folded. You can open the fold using <kbd>z</kbd><kbd>o</kbd> and to close it back press <kbd>z</kbd><kbd>c</kbd></p></div>
+            <div class="eightcol"><p class="para">Vim can fold blocks of code.
+            Select the lines to be folded in vim (for example, using the line
+            wise visual mode) and then press <kbd>z</kbd><kbd>f</kbd> keys to
+            make it folded. You can open the fold using
+            <kbd>z</kbd><kbd>o</kbd> and to close it back press
+            <kbd>z</kbd><kbd>c</kbd></p></div>
             <div class="fourcol right-align last"></div>
     	</div>
     </div>
@@ -323,11 +328,20 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
       <h2>Tips & Tricks</h2>
   		<div class="eightcol">
         <p class="para">
-          <kbd>c</kbd><kbd>i</kbd>group of commands could be useful for changing the inner contents. For example to change the content inside a heading in html like <code>&lt;h1&gt;change me&lt;/h1&gt;</code>, place the cursor anywhere over "change me" and then press cit and type your new heading. <kbd>c</kbd><kbd>i</kbd><kbd>w</kbd>, <kbd>c</kbd><kbd>i</kbd><kbd>'</kbd>, and <kbd>c</kbd><kbd>i</kbd><kbd>t</kbd> changes the inner content of a word, quoted phrase, and tags respectively. 
+          <kbd>c</kbd><kbd>i</kbd>group of commands could be useful for
+          changing the inner contents. For example to change the content inside
+          a heading in html like <code>&lt;h1&gt;change me&lt;/h1&gt;</code>,
+          place the cursor anywhere over "change me" and then press cit and
+          type your new heading. <kbd>c</kbd><kbd>i</kbd><kbd>w</kbd>,
+          <kbd>c</kbd><kbd>i</kbd><kbd>'</kbd>, and
+          <kbd>c</kbd><kbd>i</kbd><kbd>t</kbd> changes the inner content of a
+          word, quoted phrase, and tags respectively. 
         </p>
 
-        <p class="para">
-        Enable and disable spell checking by issuing the commands <code>:set spell </code>and <code>:set nospell </code> respectively. <kbd>z</kbd><kbd>=</kbd> can be used to list (and use) the spelling suggestions when the cursor is above a wrong word.
+        <p class="para">Enable and disable spell checking by issuing the
+        commands <code>:set spell </code>and <code>:set nospell </code>
+        respectively. <kbd>z</kbd><kbd>=</kbd> can be used to list (and use)
+        the spelling suggestions when the cursor is above a wrong word.
         </p>
 
 
@@ -355,8 +369,25 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
           Use :bd to close the buffer / file without quiting vim itself. <kbd>CTRL</kbd>+<kbd>[</kbd> is equivalent to pressing <kbd>ESC</kbd> in vim.
         </p>
 
+      <p class="para">
+        Using "u" and CTRL-R will not get you to all possible text states
+  while repeating <kbd>g</kbd><kbd>-</kbd> and <kbd>g</kbd><kbd>+</kbd> does.
+      </p>
+
+      <p class="para">
+        If you're working in insert mode, you can change the indent level of the current line using <kbd>CTRL </kbd> <kbd>t </kbd> and <kbd>CTRL </kbd> <kbd>d</kbd>. These commands work no matter where your cursor is positioned on the current line and adjust the indent level based on your shiftwidth setting.
+  
+      </p>
+
+      <p class="para">
+        In insert mode if you hit <kbd>CTRL</kbd><kbd>o</kbd> Vim will accept one normal mode command and brings back you to insert mode. A lifesaver. Example <kbd>CTRL</kbd><kbd>o</kbd> <kbd>g</kbd><kbd>q</kbd><kbd>l</kbd> -> format current line and carry on the typing.
+      </p>
 
       </div>
+
+        <p class="para">
+          Wrapping for long lines is on by default and the movement keys will move based on the logical lines instead of screen lines. For moving through the screen lines prepend <kbd>g</kbd> like "gj".
+        </p>
   	</div>
   </div>
 
@@ -658,3 +689,23 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
 
 
 </div>
+
+
+<div class="container padding40">
+	<div class="row">
+		<h2>References</h2>
+		<div class="sixcol">
+      <p>
+        http://dailyvim.blogspot.com
+      </p>
+
+      <p>
+        http://vim.runpaint.org/toc/
+      </p>
+    </div>
+		<div class="sixcol last"></div>
+	</div>
+</div>
+
+
+
