@@ -48,7 +48,13 @@ a:hover {
 }
 
 #header{
-    border-bottom:5px solid #ccc;
+}
+
+
+.mast_head
+{
+    padding-bottom:30px;
+    border-bottom:2px dashed #ccc;
 }
 
 #blog_index
@@ -253,7 +259,7 @@ kbd{
     border-style: solid;
     border-color: #CCC #AAA #888 #BBB;
     font-size: 14px;
-    font-family: monospace, sans-serif
+    font-family: monospace, sans-serif;
 }
 
 

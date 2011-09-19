@@ -48,7 +48,14 @@ a:hover {
 }
 
 #header{
-    border-bottom:5px solid #ccc;
+}
+
+
+.mast_head
+{
+    padding-bottom:30px;
+    border-bottom:2px dashed #ccc;
+    background-color:#F9F2E3;
 }
 
 #blog_index

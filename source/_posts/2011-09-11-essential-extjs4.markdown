@@ -69,3 +69,39 @@ el.on('click', this.onElementClick, this, {
         	<div class="fourcol"></div>
         </div>
     </div>
+
+
+    <div class="container padding40">
+    	<div class="row">
+    		<h2>Ext.ClassManager</h2>
+    		<div class="eightcol"
+                Ext.ClassManager as the name suggests, manages all the classes and handles the mapping from string class name to actual objects throughout the framework. It is accessed through the following shortcuts.
+                <ol>
+                	<li>Ext.define</li>
+                	<li>Ext.create</li>
+                	<li>Ext.widget</li>
+                	<li>Ext.getClass</li>
+                	<li>Ext.getClassName</li>
+                </ol>
+
+                <p class="para">
+                    <code>Ext.define</code> defines a class and accepts three parameters; the string dot namespaced class name, the object of properties to apply for this class, and an optional callback to execute after the class is created. For naming a class the root and the class name are CamelCased and everything else is lowercased. 
+                </p>
+            </div>
+    		<div class="fourcol last"></div>
+    	</div>
+    </div>
+
+
+<div class="container padding40">
+	<div class="row">
+		<h2>Ext.form.Panel</h2>
+		<div class="eightcol">
+            FormPanel provides standard container for forms. FormPanel is configured with the Anchor layout by default. It accepts all the configuration options associated with the BasicForm class through the <code>initialConfig</code> property.
+        </div>
+		<div class="fourcol last"></div>
+	</div>
+</div>
+
+
+

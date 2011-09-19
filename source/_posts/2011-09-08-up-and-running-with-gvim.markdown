@@ -321,6 +321,27 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
             <div class="fourcol right-align last"></div>
     	</div>
     </div>
+
+
+<div class="container padding40">
+	<div class="row">
+		<h2>Creating KeyBoard Shortcuts</h2>
+		<div class="eightcol">
+        <p class="para">
+            The easiest way to understand creating a shortcut, is well, by creating it. Let's map the <kbd>Space</kbd> in normal mode to <kbd>PageDown</kbd>. Issue the following command.
+
+            <pre>
+                :nmap &lt;Space&gt; &lt;PageDown&gt;
+            </pre>
+
+            
+        
+        </p>
+        </div>
+		<div class="fourcol right-align last"></div>
+	</div>
+</div>
+
     
 
   <div class="container padding40">
@@ -383,11 +404,19 @@ configuration, pathogen will infect a directory called <code>bundle</code> insid
         In insert mode if you hit <kbd>CTRL</kbd><kbd>o</kbd> Vim will accept one normal mode command and brings back you to insert mode. A lifesaver. Example <kbd>CTRL</kbd><kbd>o</kbd> <kbd>g</kbd><kbd>q</kbd><kbd>l</kbd> -> format current line and carry on the typing.
       </p>
 
-      </div>
+
 
         <p class="para">
           Wrapping for long lines is on by default and the movement keys will move based on the logical lines instead of screen lines. For moving through the screen lines prepend <kbd>g</kbd> like "gj".
         </p>
+
+        <p class="para">
+            <kbd>g</kbd><kbd>f</kbd> is a mnemonic for go to file and it opens the file name under the cursor.
+        </p>
+
+      </div>
+
+
   	</div>
   </div>
 
