@@ -93,3 +93,26 @@ el.on('click', this.onElementClick, this, {
     </div>
 
 
+<div class="container padding40">
+	<div class="row">
+		<h2>Ext.form.Panel</h2>
+		<div class="eightcol">
+            <p class="para">
+                FormPanel provides standard container for forms. FormPanel is configured with the Anchor layout by default. It accepts all the configuration options associated with the BasicForm class through the <code>initialConfig</code> property. <code>bodyPadding</code> is a useful property of Form panel, which it inherits from the <code>AbstractPanel</code> component. It could either be a number applied to all sides or a normal css string.
+            </p>
+
+    <p class="para">
+        <code>defaults</code> option, inherited from <code>AbstractContainer</code> allows applying default settings to all of the added items. <code>buttons</code> configuration property is a convenience method to add docked buttons to the bottom of the panel.It is a synonym for <code>fbar</code> configuration.
+    </p>
+
+<p class="para">
+    <code>Ext.form.field.File</code> is aliased as filefield and fileuploadfield and allows user selection of a file and uploading it to server on form submit.
+</p>
+
+        </div>
+		<div class="fourcol last"></div>
+	</div>
+</div>
+
+
+

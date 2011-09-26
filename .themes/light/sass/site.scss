@@ -1,6 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=IM+Fell+Double+Pica:400italic);
 body{
     background: none repeat scroll 0 0 #F0F0EB;
+    background-image: url(/images/bkg.jpg);
+    background-position: center top;
+    background-color: #DDD;
+    margin: 0px;
+    
     color: #303030;
     font-family:'Josefin Sans',Helvetica,Arial,sans-serif;
     font-size: 16px;
@@ -54,8 +59,6 @@ a:hover {
 .mast_head
 {
     padding-bottom:30px;
-    border-bottom:2px dashed #ccc;
-    background-color:#F9F2E3;
 }
 
 #blog_index
@@ -124,8 +127,10 @@ blockquote small
 }
 
 .gray{
-    
-    background-color:#DCEAF4;
+    background: none repeat scroll 0 0 #F0F0EB;
+    background-image: url(/images/bkg_cyan.jpg);
+    background-position: center top;
+    background-color: #DDD;     
 }
 
 .padding40{
