@@ -6,7 +6,7 @@ body{
     background-color: #DDD;
     margin: 0px;
     
-    color: #303030;
+    color: #8b0808;
     font-family:'Josefin Sans',Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-weight: normal;
@@ -266,6 +266,31 @@ kbd{
     border-color: #CCC #AAA #888 #BBB;
     font-size: 14px;
     font-family: monospace, sans-serif;
+}
+
+.row h2{
+    font-weight:bold;
+    margin-bottom:0.6em;
+}
+.gray p{
+  color: black;
+}
+
+code{
+  font-family:monospace;
+  font-size:12px;
+  color: black;
+}
+
+ol{
+  padding-left:40px;
+  margin:0.6em 0px;
+  font: italic 1em Georgia, Times, serif;
+  color: #999;
+}
+ol li{
+  font-size:14px;
+  color:black;
 }
 
 
